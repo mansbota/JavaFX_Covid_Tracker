@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.sample.PocetniKontroler">
+   <top>
+      <MenuBar prefHeight="25.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Županije">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaPretraguZupanija" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaZapisZupanije" text="Novi Zapis" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Simptomi">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaPretraguSimptoma" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaZapisSimptoma" text="Novi Zapis" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Bolesti">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaPretraguBolesti" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaZapisBolesti" text="Novi Zapis" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Virusi">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaPretraguVirusa" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaZapisVirusa" text="Novi Zapis" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Osobe">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaPretraguOsoba" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaZapisOsoba" text="Novi Zapis" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <BorderPane minHeight="-Infinity" prefHeight="30.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <center>
+            <Label fx:id="brojOsoba" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <Label fx:id="zadnjaOsoba" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="5.0" />
+               </BorderPane.margin>
+            </Label>
+         </bottom>
+      </BorderPane>
+   </bottom>
+</BorderPane>
